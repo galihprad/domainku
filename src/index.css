@@ -1,13 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.Navbar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  background-color: #8bc7f8;
+}
+
+.navItem {
+  margin: 30px;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.sectionStyle {
+  background-image: url(../src/assets/background-1.png);
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+
+.header2 {
+  font-size: 72px;
+  font-weight: 700;
+  color: white;
+}
+
+.packageSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.packageBox {
+  width: 300px;
+  margin: 20px 20px 100px 20px;
+  height: 80vh;
+  background-color: white;
+  color: #01579b;
+  border: 2px solid #03a9f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.packageBox:hover {
+  background-image: linear-gradient(#03a9f4, #01579b);
+  color: white;
+}
+
+.packageTitle {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.packagePrice {
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.orderButton {
+  background-color: white;
+  color: #01579b;
+  width: 150px;
+  height: 50px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.footer {
+  background-color: #01579b;
+  width: 100%;
+  height: 300px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactTitle {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 20px;
 }
